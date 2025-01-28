@@ -1,0 +1,61 @@
+#about {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Updated to stack children vertically */
+    align-items: center; /* Center items for a cleaner look */
+    justify-content: center; /* Adjust content distribution */
+    z-index: 1;
+    margin: 0 10%; /* Consistent horizontal margin */
+}
+
+.aboutHeader {
+    color: #ffebcd; /* Same color as projectHeader and skillHeader */
+    font-size: 4rem; /* Consistent large font size */
+    font-weight: 700; /* Bold font weight for emphasis */
+    z-index: 1;
+    padding: 50px; /* Generous padding for visual spacing */
+    text-align: center; /* Center the text to match other headers */
+    width: 100vw; /* Full viewport width */
+    max-width: 65rem; /* Max width similar to other sections for consistency */
+    margin: 0 auto; /* Center the header horizontally */
+    margin-top: 40px; /* Top margin to space it from content above */
+}
+
+
+.aboutImage {
+    width: 100%; /* Adjust width for better mobile responsiveness */
+    max-width: 550px; /* Maximum width to maintain aspect ratio */
+    z-index: -1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 20px; /* Adjusted top margin for consistency */
+    padding-top: 0; /* Reduce top padding */
+}
+
+.aboutParagraph {
+    width: 100%; /* Full viewport width */
+    max-width: 100vw; /* Maximum width control */
+    font-size: large;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align text content */
+    z-index: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px; /* Padding around text for readability */
+    margin-top: 20px; /* Margin top for spacing between elements */
+    text-align: center; /* Center the paragraph text */
+}
+
+/* Responsive adjustments remain unchanged as they are already optimized for mobile */
+@media screen and (max-width: 840px) {
+    .aboutImage {
+        width: 100%; /* Full width images */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .aboutParagraph {
+        padding: 20px; /* Padding inside the text container */
+    }
+}

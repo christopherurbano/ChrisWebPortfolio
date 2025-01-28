@@ -1,0 +1,73 @@
+#projects {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.projectHeader {
+    color: #ffebcd;
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.projectBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.projectBar {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    margin: 2.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(50, 50, 50);
+    text-align: center; /* Ensures text is centered */
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 60px; /* Adjusts the height of the logo */
+    width: 60px; /* Adjusts the width of the logo */
+    margin-bottom: 20px; /* Space between the logo and the text */
+}
+
+.skillBarText {
+    flex-grow: 1; /* Allows text to fill the remaining space */
+    display: flex;
+    flex-direction: column; /* Stacks title and paragraph */
+    align-items: center; /* Ensures text is aligned in the center */
+}
+
+.skillBarText > h2, .skillBarText > p {
+    margin: 0; /* Removes margin for cleaner text alignment */
+    padding: 0; /* Removes padding for cleaner text alignment */
+}
+
+@media screen and (max-width: 840px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectBar {
+        width: 90%; /* Adjusts width for mobile screens */
+        margin: 20px auto; /* Provides space around each bar */
+    }
+    .skillBarImg {
+        margin-bottom: 1rem; /* Adds space between the image and the text */
+    }
+    .skillBarText {
+        text-align: center; /* Ensures text is centered under the image */
+    }
+}

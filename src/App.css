@@ -1,0 +1,16 @@
+/* Ensures that the body takes full height and width, with no overflow or extra spacing */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    width: 100%;
+    height: 100%;
+}
+
+/* Basic styles for consistent font and background across the app */
+body {
+    font-family: 'Arial', sans-serif; /* Example font */
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
